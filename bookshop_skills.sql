@@ -121,7 +121,7 @@ ON c.Top_Format_ID = r.Format_ID;
 SELECT r.*, c.cat_name, c.inventory 
 FROM Format_Ref r
 LEFT JOIN Category c
-ON c.Top_Format_ID = r.Format_ID; /* 	:( 		*/
+ON c.Top_Format_ID = r.Format_ID; /* :( */
 
 -- But if I had to left join I could then easily fix having Audio and Other with NULL values
 -- Even better I can continue to clean the data grid by organizing it by largest inventory... 
@@ -160,4 +160,4 @@ LIMIT 5;
 -- Now if I wanted to see the top 5 categories and their formats with the biggest inventory I can run ... 
 SELECT * FROM BookShop.vbiginventory;
 
--- FUNCTIONS -- 
+-- STORED PROCEDURES & FUNCTIONS -- 
